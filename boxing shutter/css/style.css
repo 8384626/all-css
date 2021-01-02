@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body,
+.wrap{
+  height: 100vh;
+}
+.wrap .item{
+  width: 8.3333333%;
+  height: 100vh;
+  float: left;
+  text-align: center;
+  line-height: 100vh;
+  position: relative;
+  font-size: 50px;
+  font-style: italic;
+}
+.item > div{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  color: #ffffff;
+}
+.wrap .item .x1{
+  background:rgb(22, 142, 146);
+  animation: move 0.6s 0s linear forwards;
+}
+.wrap .item .x2{
+  background:rgb(162, 231, 71);
+  animation: move 0.6s 0.8s linear forwards;
+}
+.wrap .item .x3{
+  background:rgb(84, 48, 212);
+  animation: move 0.6s 1.6s linear forwards;
+}
+.wrap .item .x4{
+  background:rgb(192, 46, 126);
+  animation: move 0.6s 2.4s linear forwards;
+}
+
+.wrap .item:nth-child(1) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 2.6s linear forwards;
+}
+.wrap .item:nth-child(2) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 2.7s linear forwards;
+}
+.wrap .item:nth-child(3) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 2.8s linear forwards;
+}
+.wrap .item:nth-child(4) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 2.9s linear forwards;
+}
+.wrap .item:nth-child(5) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 3.0s linear forwards;
+}
+.wrap .item:nth-child(6) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 3.1s linear forwards;
+}
+.wrap .item:nth-child(7) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 3.2s linear forwards;
+}
+.wrap .item:nth-child(8) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 3.3s linear forwards;
+}
+.wrap .item:nth-child(9) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 3.4s linear forwards;
+}
+.wrap .item:nth-child(10) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 3.5s linear forwards;
+}
+.wrap .item:nth-child(11) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 3.6s linear forwards;
+}
+.wrap .item:nth-child(12) .x5{
+  background:rgb(21, 174, 235);
+  animation: move 0.6s 3.7s linear forwards;
+}
+
+
+@keyframes move{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
