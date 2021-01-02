@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;;
+  background-color: black;
+}
+h1{
+  color: transparent;
+  font-size: 4em;
+  background: linear-gradient(to right,#000,#eee,#000);
+  -webkit-background-clip: text;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  animation: move 3s linear infinite;
+}
+@keyframes move{
+  form{
+    background-position: -200%;
+  }
+  to{
+    background-position: 200%;
+  }
+}
