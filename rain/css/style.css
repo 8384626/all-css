@@ -54,7 +54,7 @@ animation: move 3s linear infinite;
               100px 0 0 0 #5a5a5a, 
               83px 0 0 0 #5a5a5a,
               132px 0 0 0 #5a5a5a;
-animation: rain 1.5s linear infinite;
+animation: rain 1.4s linear infinite;
 }
 
 @keyframes rain{
