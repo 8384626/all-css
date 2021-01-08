@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+	width: 200px;
+  height: 200px;
+  transform: translate(-50%,-50%);
+	border-radius: 50%;	
+	animation: peas 2s linear infinite;
+}
+.box:before,.box:after{
+	display: block;
+	content: "";
+	width: 200px;
+	height: 100px;
+	background-color:yellow;
+}
+.box:before{/*伪元素*/
+	border-radius: 100px 100px 0 0;
+	transform: rotate(-35deg);
+	animation: mouthTop 1s linear infinite;
+}
+.box:after{
+	border-radius: 0 0 100px 100px;
+	transform: rotate(35deg);
+	animation: mouthButton 1s linear infinite;
+}
+@keyframes mouthTop{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(-35deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+@keyframes mouthButton{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(35deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+@keyframes peas{
+	0%{
+		box-shadow:
+		    300px 0px 0px -80px green,	/*阴影*//*水平 垂直 模糊 大小	*/
+				450px 0px 0px -80px green,
+				600px 0px 0px -80px green,
+				750px 0px 0px -80px green;
+	}
+	50%{
+		box-shadow:
+		    150px 0px 0px -80px green,
+				300px 0px 0px -80px green,
+				450px 0px 0px -80px green,
+				600px 0px 0px -80px green;
+	}
+	100%{
+		box-shadow:
+		    0px 0px 0px -80px green,
+				150px 0px 0px -80px green,
+				300px 0px 0px -80px green,
+				450px 0px 0px -80px green;
+	}
+}
