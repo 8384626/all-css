@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background-color: #000;
+}
+a{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-decoration: none;
+  font-size: 24px;
+  background:linear-gradient(50deg,rgb(34, 117, 212),rgb(100, 221, 84),rgb(238, 69, 69),rgb(253, 157, 92),rgb(128, 96, 241));
+  background-size: 400%;
+  width: 400px;
+  /* height: 100px; */
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  z-index: 2;
+}
+a::before{
+  content:"";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  background:linear-gradient(50deg,rgb(34, 117, 212),rgb(100, 221, 84),rgb(238, 69, 69),rgb(253, 157, 92),rgb(128, 96, 241));
+  background-size: 400%;
+  border-radius:50px;
+  filter: blur(20px);
+  z-index: -1;
+
+}
+a:hover,
+a:hover::before{
+  animation: sun 10s infinite;
+}
+
+@keyframes sun{
+  100%{
+    background-position: -400% 0;
+  }
+}
